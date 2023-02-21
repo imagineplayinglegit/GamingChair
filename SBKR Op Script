@@ -1,10 +1,4 @@
-
-pcall(function()
-_G.ToKeys = false
-_G.RobloxEditor = true
-_G.ToKeysAndUIAndRE = false
-_G.LoadingScreen = false
-end)
+print'Loaded'
 
 
 v1 = pcall
